@@ -14,9 +14,7 @@ from mmengine.dist import get_dist_info, init_dist
 from mmengine.utils import get_git_hash
 
 from mmdet import __version__
-from mmengine.runner import set_random_seed
-from mmdet.engine import train_detector
-from mmengine.utils import get_random_seed as init_random_seedr
+from mmdet.apis import init_random_seed, set_random_seed, train_detector
 from mmdet.datasets import build_dataset
 from mmdet.models import build_detector
 from mmdet.utils import (collect_env, get_device, get_root_logger,
